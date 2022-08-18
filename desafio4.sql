@@ -1,12 +1,5 @@
 -- Active: 1660770087967@@127.0.0.1@3307@SpotifyClone
 SELECT
-    SpotifyClone.user_name,
-    
-FROM  SpotifyClone.history AS his
-    INNER JOIN 
-;
-
-SELECT
     u.user_name AS usuario,
     IF(MAX(YEAR(his.history_reproduction_date) >= 2021), 'Usuário ativo', 'Usuário inativo') AS status_usuario
 FROM
