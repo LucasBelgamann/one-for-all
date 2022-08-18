@@ -16,5 +16,5 @@ SELECT
     MAX(p.plan_value) AS faturamento_maximo,
     ROUND(AVG(p.plan_value), 2) AS faturamento_medio,
     SUM(p.plan_value) AS faturamento_total
-    FROM plan AS p
+    FROM SpotifyClone.plan AS p
         INNER JOIN SpotifyClone.users AS us ON p.plan_id = us.user_plan_id;
